@@ -1,0 +1,15 @@
+.create-card{
+    border: 1px solid var(--gray-color);
+    padding: 0.5rem 2rem 2rem 2rem;
+    display: flex;
+    border-radius: 16px;
+}
+.create-card-content{
+    width: 100%;
+}
+
+
+.btn-create{
+    font-size: 0.9rem;
+    padding: 0.5rem 2rem !important;
+}

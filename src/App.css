@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+html, body{
+  background-color: var(--background-color) !important;
+}
+.container{
+    min-height: 100vh;
+    padding: 0 2rem;
+}
+.btn-final{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input, textarea{
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid var( --gray-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 1rem !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  border: none;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-enter{
+  background-color: var(--color-btn-enter);
+  color:  var( --white-color);
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btn-enter:hover{
+  background-color: #5F81D2;
+ 
+}
+.btn-enter:disabled {
+  background-color: gray !important;
+  cursor: not-allowed;
+}
+.delete-modal{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  width: 500px !important;
 }
